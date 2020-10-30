@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bad+Script&family=Lobster&display=swap');
+:root {
+    --main-color:black; 
+    --accent-color:#3A0808; 
+    --star-color:#EEBA29; 
+    --href-color:#0083EC; 
+    --old-price-color:#BF281E; 
+    --new-price-color:#629C44; 
+    font-family: 'Abel',sans-serif;
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+}
+
+body main hr {
+    width: 150px;
+    size: 3px;
+    color: darkslategrey;
+}
+
+#navbarNav > ul {
+    padding-top: 5px;
+    font-family: 'Bad Script', cursive;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#navbarNav > ul > li > a {
+    color: var(--accent-color);
+}
+
+body > main > section:nth-child(1) > h2 {
+    color: var(--accent-color);
+}
+
+#carouselExampleIndicators > div > div > img {
+    width: 1000px;
+    margin: auto;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 50pc;
+    height: 50px;
+    background: no-repeat 50% 100% 100%;
+}
+
+#carouselExampleIndicators {
+    opacity: 0.85;
+}
+
+header .header {
+    padding: 1% 5px 5px 5px;
+}
+
+header .logo img {
+    height: 90px;
+}
+
+/* flex:1 - віддає весь вільний розмір */
+header .menu-items {
+    flex: 1;
+    padding-top: 2%;
+}
+
+body > main > section > ul > li {
+    font-family: 'Bad Script', cursive;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+header .menu-items a:hover {
+    transform: scale(1.2);
+}
+
+/*при <448 не по центу?*/
+main section h2 {
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 20px 5px 20px 5px;
+}
+
+main section ul li {
+    display: flex;
+    justify-content: center;
+    font-family: 'Abel', sans-serif;
+    color: var(--main-color);
+    padding: 5px 5px 5px 5px;
+}
+
+@media (min-width: 450px) {
+    main section .menu-product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 520px) {
+    main section .menu-product {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+main section .veronica {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    padding: 20px 0px 15px 0px;
+}
+
+main section .city {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+body > main > div.products.row > article {
+    border: none;
+}
+
+body > main > div.products.row > article> div {
+    text-align: center;
+}
+
+body > main > div.products.row > article > div > div {
+    color: var(--star-color);
+}
+
+/* DONT WORK??? padding */
+body > main > div.products.row > article > div > a.href.card-title {
+    padding-top: 5px;
+    font-weight: 600;
+}
+
+body > main > div.products.row > article > div > p.oldprice > del {
+    color: var(--old-price-color);
+    font-weight: 600;
+}
+
+body > main > div.products.row > article > div > p.newprice {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--new-price-color);
+}
+
+body > main > div.products.row > article > div > a.btn.btn-primary {
+    font-weight: 500;
+}
+
+/* 
+main .sweet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .checked{
+    color: rgb(253, 253, 106);
+    
+}
+
+@media (min-width: 769px) {
+    main .sweet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}  */
